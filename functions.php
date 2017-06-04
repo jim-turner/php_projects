@@ -13,29 +13,57 @@
 
     
     <?php 
-    $ages =array(4, 8, 15, 16, 23, 42);
-    ?>
     
-    <?php
-    echo "1:" . current($ages) . "<br />";
-    next($ages);
-    echo "2:" . current($ages) . "<br />";
-    reset($ages);
-    echo "3:" . current($ages) . "<br />";
-    echo "3:";
+    function say_hello(){
+        echo "Hello World? <br />";
+        
+        
+    }
+    say_hello();
     
+    
+    function say_hello2($word){
+        echo "Hello {$word} <br />";
+        
+    }
+    
+    say_hello2("World");
+    say_hello2("Everyone");
+    
+    $name = "John Doe";
+    say_hello2($name);
+    
+    function say_hello3($greeting, $target, $punct){
+        echo $greeting . "," . $target . $punct . "<br />";
+        
+    }
+    
+    say_hello3("Greetings", $name, "!");
+        
     ?>
     
     <br />
     
     <?php
-    //this is a while loop that moves the array pointer
-    while ($age = current($ages)) {
-        echo $age . "," ;
-        next($ages);
+    
+    function addition($val1, $val2){
+        $sum = $val1 + $val2;
+        return $sum;
     }
+    $new_val = addition (3,4);
+    echo $new_val;
     
     
+      function add_subt($val1, $val2){
+        $add = $val1 + $val2;
+          $subt = $val1 - $val2;
+          $result = array($add, $subt);
+        return $result;
+    } 
+    
+    $result_array = add_subt(10,5);
+    echo "Add:" . $result_array [0];
+        echo "Subtract:" . $result_array [1];
     ?>
     
       
