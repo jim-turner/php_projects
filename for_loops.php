@@ -2,7 +2,7 @@
 
 <head>
 
-    <title>Switch Statements</title>
+    <title>Loops; for</title>
 
 </head>
 
@@ -14,29 +14,9 @@
     
     <?php 
     
-$count = 0;
-    while ($count <= 10){
-        echo $count . ",";
-        $count++;
-    }
-            echo "<br /> Count: {$count}";
-    ?>
-    
-    <br />
-    
-       <?php 
-    
-$count = 0;
-    while ($count <= 10){
-        if ($count == 5){
-            echo "FIVE"; 
-        }else {
-            echo $count . "," ;
-        }
-        
-        $count++;
-    }
-            echo "<br /> Count: {$count}";
+for ($count =0; $count <=10; $count ++){
+    echo $count . ",";
+}
     ?>
     
 
